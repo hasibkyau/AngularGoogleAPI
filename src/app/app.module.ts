@@ -1,18 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { GooglemapComponent } from './googlemap/googlemap.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, GooglemapComponent],
+  imports: [BrowserModule, GoogleMapsModule, RouterModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
