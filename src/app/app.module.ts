@@ -4,11 +4,18 @@ import { AppComponent } from './app.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { GooglemapComponent } from './googlemap/googlemap.component';
 import { RouterModule } from '@angular/router';
-import { GeocoderComponent } from './geocoder/geocoder.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, GooglemapComponent, GeocoderComponent],
-  imports: [BrowserModule, GoogleMapsModule, RouterModule],
+  declarations: [AppComponent, GooglemapComponent],
+  imports: [
+    BrowserModule,
+    GoogleMapsModule,
+    RouterModule,
+    BrowserModule,
+    FormsModule,
+    GoogleMapsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
