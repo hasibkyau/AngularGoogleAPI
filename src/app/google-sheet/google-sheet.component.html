@@ -1,0 +1,10 @@
+<div class="container">
+  <form (ngSubmit)="onSubmit()" [formGroup]="contactForm">
+    <h4>Contact Us</h4>
+    <input type="text" formControlName="yourName" placeholder="Name" />
+    <input type="text" formControlName="yourNumber" placeholder="Number" />
+    <input type="email" formControlName="yourEmail" placeholder="Email" />
+    <textarea name="message" formControlName="message" rows="7" placeholder="Your Message"></textarea>
+    <input type="submit" value="Submit" id="submit" />
+  </form>
+</div>
